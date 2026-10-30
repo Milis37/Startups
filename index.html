@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="Werkei verbindet Eigentümer mit Menschen, die Wohnungen reinigen möchten.">
+  <title>Werkei – Wohnungen reinigen, Geld verdienen</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Werkei Startseite">werkei<span>.de</span></a>
+    <nav class="header-actions" aria-label="Language">
+      <button class="language-button active" type="button" data-language="de" aria-pressed="true">DE</button>
+      <button class="language-button" type="button" data-language="en" aria-pressed="false">EN</button>
+      <a class="button button-dark header-cta" href="#owners" data-copy="navOwners">Für Eigentümer</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow" data-copy="eyebrow">CHEMNITZ · FLEXIBEL · DIREKT</p>
+        <h1 data-copy="headline">Wohnungen reinigen.<br><span>Geld verdienen.</span></h1>
+        <p class="hero-text" data-copy="intro">Werkei bringt Eigentümer und zuverlässige Reinigungskräfte in Chemnitz zusammen. Entdecke kleine Jobs in deiner Nähe und frage direkt an.</p>
+        <a class="button button-yellow" href="#jobs" data-copy="seeJobs">Jobs entdecken <span aria-hidden="true">↓</span></a>
+        <p class="hero-note" data-copy="heroNote">Kostenlos ansehen · Anfrage per E-Mail</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div><div class="building building-back"></div><div class="building building-front"><i></i><i></i><i></i><i></i><b></b></div>
+        <div class="plant plant-one">✳</div><div class="bucket"><span></span></div>
+        <div class="art-label"><span class="art-dot"></span><span data-copy="artLabel">Ein guter Job<br>gleich um die Ecke</span></div>
+      </div>
+    </section>
+
+    <section class="jobs-section" id="jobs">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow" data-copy="jobsEyebrow">DIE ERSTEN JOBS</p><h2 data-copy="jobsTitle">Finde deinen nächsten Job.</h2></div>
+          <span class="demo-badge"><span></span><span data-copy="demo">Beispieldaten</span></span>
+        </div>
+        <p class="section-intro" data-copy="jobsIntro">Wähle einen Job aus der Karte oder den Angeboten. Alle Angaben sind Beispiele für die Testphase.</p>
+        <div class="jobs-layout">
+          <div class="job-list" id="jobList" aria-live="polite"></div>
+          <div class="map-panel">
+            <div class="map-topline"><span data-copy="mapTitle">CHEMNITZ, DE</span><span class="map-symbol" aria-hidden="true">＋</span></div>
+            <div class="district-map" id="districtMap" role="group" aria-label="Illustrative map of sample jobs in Chemnitz">
+              <svg class="map-lines" viewBox="0 0 600 460" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M-20 105 C120 160 180 80 290 150 S460 245 630 170"/><path d="M-30 330 C100 260 190 350 285 290 S480 220 630 310"/>
+                <path d="M155 -20 C210 80 160 180 250 250 S340 350 300 490"/><path d="M420 -20 C350 90 440 170 400 250 S390 370 470 490"/>
+                <path class="road-major" d="M-10 220 C140 180 210 250 300 220 S470 130 620 220"/><path class="road-major" d="M320 -10 C270 100 340 180 300 235 S250 360 330 470"/>
+              </svg>
+              <span class="district district-a">SONNENBERG</span><span class="district district-b">ZENTRUM</span><span class="district district-c">KAßBERG</span><span class="district district-d">HILBERSDORF</span>
+              <div id="mapPins"></div>
+              <div class="map-credit" data-copy="mapNote">Schematische Karte · Beispielstandorte</div>
+            </div>
+            <div class="map-legend"><span class="legend-pin"></span><span data-copy="mapLegend">Tippe auf einen Preis, um den Job zu sehen</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section">
+      <div class="wrap">
+        <p class="eyebrow" data-copy="howEyebrow">EINFACH LOSLEGEN</p><h2 data-copy="howTitle">Drei Schritte. Ein guter Nebenjob.</h2>
+        <div class="steps">
+          <article><span class="step-number">01</span><h3 data-copy="step1Title">Job entdecken</h3><p data-copy="step1Text">Finde einen passenden Reinigungsjob in deiner Nähe.</p></article>
+          <article><span class="step-number">02</span><h3 data-copy="step2Title">Direkt anfragen</h3><p data-copy="step2Text">Schreib uns per E-Mail. Wir verbinden dich mit dem Eigentümer.</p></article>
+          <article><span class="step-number">03</span><h3 data-copy="step3Title">Reinigen & verdienen</h3><p data-copy="step3Text">Stimme Details und Bezahlung direkt mit dem Eigentümer ab.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="owner-section" id="owners">
+      <div class="wrap owner-card">
+        <div><p class="eyebrow" data-copy="ownerEyebrow">FÜR EIGENTÜMER</p><h2 data-copy="ownerTitle">Wohnung bereit machen. Helfer finden.</h2><p data-copy="ownerText">Du brauchst Unterstützung bei der Reinigung? Schick uns Ort, Größe und deinen Wunschtermin. Wir melden uns persönlich.</p></div>
+        <a class="button button-yellow" id="ownerEmail" href="mailto:hallo@werkei.de" data-copy="ownerButton">Job anfragen <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#top">werkei<span>.de</span></a><p data-copy="footerText">Ein lokaler Test für Chemnitz.</p><div><a href="legal.html" data-copy="legalLink">Impressum & Datenschutz</a><span>© <span id="year"></span> Werkei</span></div></footer>
+</body>
+</html>
